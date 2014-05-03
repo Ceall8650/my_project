@@ -1,0 +1,161 @@
+body{
+    background-image: url(http://spletnogostovanje.eu/camy/wp-content/themes/camy/images/bg/bg16.png);  
+}
+.banner_top{
+  height: 30px;
+  background: white;
+  border-top: solid 5px rgba(143,209,89,1);
+}
+
+.banner_left li{
+  float: left;
+  display: inline;
+  padding: 0px 50px 0px 0px;
+}
+
+.banner_right{
+  float: right; 
+}
+
+.wrapper {
+  /*border: 1px solid black;*/
+  padding: 40px 0px 0px 0px;
+  width: 1000px;
+  margin: auto;
+}
+
+.banner {
+  clear: both; 
+}
+
+.logo{
+  float:left; 
+}
+
+.menu{
+  padding-top: 30px; 
+  clear: both;
+}
+
+.SN_link {
+  margin-top:0px; 
+  float: right;
+}
+
+a{
+text-decoration: none;  
+}
+
+li a{
+  color: black;
+}
+
+span {
+  color: rgba(143,209,89,1);
+}
+
+.hover_link:hover {
+  color: rgba(143,209,89,1);
+}
+
+
+.menu ul {
+  margin: 0px;
+  padding: 30px 0px 30px 0px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.menu li{
+  margin: 0px 20px 0px 0px;
+  padding: 0px;
+  display: inline;
+}
+
+.cart {
+  padding: 0px;
+  margin: 0px ;
+  float: right;
+}
+
+.store_visiting {
+  padding-left: 10px;
+  background-color: white;
+}
+
+.store_visiting h2{
+  font-weight: normal;
+  font-size: 180%;
+  margin: 0px;
+}
+
+.store_visiting a {
+  float: right;
+  color: white;
+  font-size: large;
+  background-color: rgba(143,209,89,1);  
+}
+
+.title_name {
+  font-size: 100%;
+  float: left;
+  clear: both;
+}
+
+.change_pros{
+  float: right;
+}
+
+.recent_pro, .featured_pro{
+  clear: both;
+}
+
+.pro_info{
+  width: 200px;
+  margin: 0px 20px 20px 0px;
+  border: 1px solid gray;  
+  float: left;
+}
+
+.pro_img{
+  background: white;
+  border-bottom: 1px solid gray;  
+}
+
+.pro_descriptions{
+  border-bottom: 1px solid gray;    
+}
+
+.featured_pro{
+  clear: both;
+}
+
+.brand{
+  margin-bottom: 10px; 
+  clear: both;
+}
+
+.brand_list{
+  clear: both;
+}
+
+.brand_link{
+  width: 198px;
+  border: 1px solid gray;
+  float:left;
+  background: white;
+  border-collapse: collapse;
+}
+
+.footer { 
+  background: white;
+  clear: both;  
+}
+
+.footer ul{
+  display: inline;
+}
+
+.footer li{
+  width: 250px;
+}
