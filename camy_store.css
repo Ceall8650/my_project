@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body{
-    background-image: url(http://spletnogostovanje.eu/camy/wp-content/themes/camy/images/bg/bg16.png);  
+    background-image: url(images/bg_image/bg_image_03.jpg);  
     font-family: Helvetica Neue, "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
 }
 
@@ -80,8 +80,7 @@ p{
 }
 
 .banner_top_content{
-  width: 1000px;
-/* height: 30px; */
+  width: 1000px;  
   margin: auto;
 }
 
@@ -102,7 +101,7 @@ p{
 }
 
 .lang{
-   background: url(https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_05.png?raw=true) no-repeat 135px;
+   background: url(images/header_banner/header_banner_05.png) no-repeat 135px;
 }
 
 .lan_eng{
@@ -112,19 +111,32 @@ p{
 
 .langlist{ 
   margin-left: 70px;
-  margin-top: 14px;  
   float: left; 
   position: absolute;
-  display: none;
+  top: 42px;  
+  display: none;  
+}
+
+.langlist li{
+  width: 81px;
+  height: 41px;
+  list-style-type: none;
+  border-top: 1px solid white;  
 }
 
 .langlist a{
   text-align: center;  
   background: white;
-  border: 1px solid  rgba(140,140,140,0.6);
-  border-top: 1px solid white;  
+  border-left: 1px solid  rgba(140,140,140,0.6);
+  border-right: 1px solid  rgba(140,140,140,0.6);
+  border-bottom: 1px solid  rgba(140,140,140,0.6);
   display: block;
   padding: 10px 5px;
+  height: 20px;
+}
+
+.langlist a:hover{
+  color: rgba(154,185,32,1);  
 }
 
 .lang:hover .langlist{  
@@ -148,10 +160,9 @@ p{
 
 .logo a{
   float:left;   
-  display: block;
   width: 315px;
   height: 55px;
-  background: url(http://camy.premiumcoding.com/wp-content/uploads/2013/03/logoCamy1.png);
+  background: url(images/header_banner/header_banner_10.png) no-repeat;
 }
 
 .SN_link{
@@ -181,7 +192,7 @@ p{
 
 .search_submit{
   width: 40px;
-  background-image: url(https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_19.jpg?raw=true);
+  background-image: url(images/header_banner/header_banner_19.jpg);
   background-repeat: no-repeat;  
   border: none;
 }
@@ -204,15 +215,15 @@ p{
   display: inline;
 }
 
-.hover_link{
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  -ms-transition: color 0.5s; 
-  -o-transition: color 0.5s;
-  transition: color 0.5s; 
+.trans_green{
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s; 
+  -o-transition: color 0.3s;
+  transition: color 0.3s; 
 } 
 
-.hover_link:hover {
+.trans_green:hover {
   color: rgba(154,185,32,1);
 }
 
@@ -531,7 +542,7 @@ p{
   border-radius: 10px;
   float: left; 
   background: rgba(242,253,255,0.8);
-  background-image: url(https://github.com/Ceall8650/my_project/raw/d3a7657e07cc7e4d696bd2daf667e7a591190524/images/footer_info/footer_info_21.png?raw=true) ;
+  background-image: url(images/footer_info/footer_info_21.png) ;
   background-repeat: no-repeat;
   background-position: 168px 56px;
 }
