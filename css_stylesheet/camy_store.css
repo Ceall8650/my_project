@@ -249,14 +249,14 @@ p{
   color: white !important;
 }
 
-.slides_wrapper {
-  overflow: hidden;   
+.slides_wrapper { 
+  overflow: hidden;
 }
 
 .slides{
-  position: relative;  
-  /*left: -1000px;  */
-  width: 3000px;
+  position: relative;  /*以slides_wrapper區塊為位置基準做任意偏移*/
+  margin: auto;
+  width: 5000px;
 }
 
 .item01,.item02, .item03{
@@ -264,8 +264,8 @@ p{
   position: relative;
 } 
 
-.slides_wrapper img{
-  width: 1000px;
+.slides img{
+  max-width: 1000px;
   height: auto;
 }
 
