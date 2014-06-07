@@ -255,7 +255,7 @@ p{
 
 .slides{
   position: relative;  
-  left: -1000px;  
+  /*left: -1000px;  */
   width: 3000px;
 }
 
@@ -269,6 +269,15 @@ p{
   height: auto;
 }
 
+
+.Slides_text{
+  position: absolute;
+  top: 50px;
+  left: 20px;   
+  height: 200px;
+  color: white;
+  z-index: 99;  
+}
 
 .Slides_text{
   position: absolute;
@@ -293,6 +302,11 @@ p{
 .text_detail{
   font-weight: bold;
   font-size: 20px;
+}
+
+.text_detail a:hover{
+  color: rgba(154,185,32,1);
+  text-decoration: underline;
 }
 
 .store_visiting{
@@ -361,24 +375,6 @@ p{
 .pure-button{
   background: rgba(147,173,43,1) !important;
   color: white !important;
-}
-
-.slides_wrapper {
-  position: relative;   
-}
-
-.slides_wrapper img{
-  max-width: 100%;
-  height: auto;
-}
-
-.Slides_text{
-  position: absolute;
-  top: 50px;
-  left: 20px;   
-  height: 200px;
-  color: white;
-  z-index: 99;  
 }
 
 .text_title h2{
