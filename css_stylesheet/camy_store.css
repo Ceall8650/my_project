@@ -250,33 +250,62 @@ p{
 }
 
 .slides_wrapper { 
-  overflow: hidden;
+  position: relative;  
+  width: 1000px;
+  margin: 0 auto;   
 }
 
 .slides{
-  position: relative;  /*以slides_wrapper區塊為位置基準做任意偏移*/
-  margin: auto;
-  width: 5000px;
+  position: relative;  
+  height: 355px;
+  overflow: visible !important;
 }
 
-.item01,.item02, .item03{
-  float: left;
-  position: relative;
-} 
+.slides li{
+  /*position: absolute;*/
+  width: 1000px;
+  height: 355px;
+}
 
 .slides img{
   max-width: 1000px;
   height: auto;
 }
 
+.item01,.item02, .item03, .item04{
+  float: left;
+  position: relative;
+} 
 
-.Slides_text{
+.pre_btn, .next_btn{
   position: absolute;
-  top: 50px;
-  left: 20px;   
-  height: 200px;
-  color: white;
-  z-index: 99;  
+  z-index: 99999;
+}
+
+.pre_btn{
+  top: 50%;
+  left: 131px;
+}
+
+.next_btn{
+  top: 50%;  
+  right: 131px;
+}
+
+
+
+.pre_btn img, .next_btn img{
+  opacity: 0.7;  
+  cursor: pointer;
+  -webkit-transition: opacity 0.1s ;
+    -moz-transition: opacity 0.1s ;
+    -ms-transition: opacity 0.1s ;
+    -o-transition: opacity 0.1s ;
+    transition: opacity 0.1s ;  
+}
+
+.pre_btn img:hover, .next_btn img:hover{
+  opacity: 1;
 }
 
 .Slides_text{
@@ -287,6 +316,7 @@ p{
   color: white;
   z-index: 99;  
 }
+
 
 .text_title h2{
   font-size: 40px;
