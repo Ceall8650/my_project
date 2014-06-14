@@ -102,7 +102,7 @@ p{
 }
 
 .lang{
-   background: url(https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_05.png?raw=true) no-repeat 135px;
+  background: url(https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_05.png?raw=true) no-repeat 135px;
 }
 
 .lan_eng{
@@ -213,8 +213,9 @@ p{
 
 .menu_home, .menu_shop, .menu_shopby, .menu_cart, .menu_news, .menu_page, .menu_portfolio, .menu_contact{
   margin: 0px 20px 0px 0px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   display: inline;
+  position: relative;
 }
 
 .submenu{
@@ -224,19 +225,34 @@ p{
   z-index: 99;
   background: white;
   box-shadow: 0px 0px 7px 0px rgba(150,150,150,0.7);
-  display: none;
+  /*display: none;*/
   border-bottom: 5px solid rgba(154,185,32,1); 
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
   -ms-transition: opacity 0.5s; 
   -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;     
+  transition: opacity 0.5s;   
+
+  -moz-transform:scaleY(0);
+  -webkit-transform:scaleY(0);
+  -o-transform:scaleY(0);
+  -ms-transform:scaleY(0);
+  transform:scaleY(0);
+}
+
+.menu_home:hover .home_submenu{
+  opacity: 1;
+  -moz-transform:scaleY(1);
+  -webkit-transform:scaleY(1);
+  -o-transform:scaleY(1);
+  -ms-transform:scaleY(1);
+  transform:scaleY(1);  
 }
 
 .home_submenu{
-  top: 210px;
-  left: 120px;
+  top: 10px;
+  left: -10px;
 }
 
 .home_submenu a{
@@ -244,16 +260,16 @@ p{
   display: block;
 }
 
-.menu_home:hover .submenu{
-  display: block;
-  opacity: 1;
-}
 
 .home_submenu li{
   list-style: none;
   margin: 5px 5px;
   padding: 13px 5px;
   border-bottom: 1px solid gray;    
+}
+
+.home_submenu li:last-child{
+   border-bottom: none;
 }
 
 .hover_link{
@@ -272,7 +288,6 @@ p{
   padding: 0px;
   margin: 0px ;
   float: right;
-
 }
 
 .cart i{
@@ -478,6 +493,8 @@ background-color:#FFFFFF}
   /*position: absolute;*/
   width: 1000px;
   height: 355px;
+  float: left;
+  position: relative;  
 }
 
 .slides img{
@@ -485,11 +502,11 @@ background-color:#FFFFFF}
   height: auto;
 }
 
-.item01,.item02, .item03, .item04{
+/*.item01,.item02, .item03, .item04{
   float: left;
   position: relative;
 } 
-
+*/
 .pre_btn, .next_btn{
   position: absolute;
   z-index: 99999;
@@ -504,7 +521,6 @@ background-color:#FFFFFF}
   top: 50%;  
   right: -36px;
 }
-
 
 
 .pre_btn img, .next_btn img{ 
