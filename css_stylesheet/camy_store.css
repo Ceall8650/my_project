@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 body{
     background-image: url(http://spletnogostovanje.eu/camy/wp-content/themes/camy/images/bg/bg16.png);  
     font-family: Helvetica Neue, "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+    /*overflow-x: hidden;*/
 } 
 
 h3{
@@ -49,6 +50,7 @@ a{
 
 .green_word {
   color: rgba(154,185,32,1);
+  /*9AB920*/
 }
 
 p{
@@ -81,7 +83,6 @@ p{
 
 .banner_top_content{
   width: 1000px;
-/* height: 30px; */
   margin: auto;
 }
 
@@ -95,7 +96,6 @@ p{
 }
  
 .banner_left>ul>li{   
-  left: 130px;
   float: left;
   display: inline; 
   padding: 0px 50px 0px 0px;
@@ -198,22 +198,62 @@ p{
   border: none;
 }
  
-.menu{ 
+.menu_nav{ 
   margin-top: 30px; 
   border-top: 1px dotted rgba(140,140,140,0.6) ;  
   padding: 15px 0px 15px 0px;  
 }
 
-.menu ul {
+.menu_nav_list {
   margin: 0px;
   padding-top: 15px;  
   float: left;
 }
 
-.menu li{
+
+.menu_home, .menu_shop, .menu_shopby, .menu_cart, .menu_news, .menu_page, .menu_portfolio, .menu_contact{
   margin: 0px 20px 0px 0px;
-  padding: 0px;
+  padding-bottom: 10px;
   display: inline;
+}
+
+.submenu{
+  width: 180px;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 99;
+  background: white;
+  box-shadow: 0px 0px 7px 0px rgba(150,150,150,0.7);
+  display: none;
+  border-bottom: 5px solid rgba(154,185,32,1); 
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s; 
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;     
+}
+
+.home_submenu{
+  top: 210px;
+  left: 120px;
+}
+
+.home_submenu a{
+  font-size: small;
+  display: block;
+}
+
+.menu_home:hover .submenu{
+  display: block;
+  opacity: 1;
+}
+
+.home_submenu li{
+  list-style: none;
+  margin: 5px 5px;
+  padding: 13px 5px;
+  border-bottom: 1px solid gray;    
 }
 
 .hover_link{
@@ -224,7 +264,7 @@ p{
   transition: color 0.5s; 
 } 
 
-.hover_link:hover {
+.hover_link:hover{
   color: rgba(154,185,32,1);
 }
 
@@ -249,7 +289,180 @@ p{
   color: white !important;
 }
 
-.slides_wrapper { 
+#loading_animate{
+position:relative;
+width:128px;
+height:128px;
+-moz-transform:scale(0.6);
+-webkit-transform:scale(0.6);
+-ms-transform:scale(0.6);
+-o-transform:scale(0.6);
+transform:scale(0.6);
+display:none;
+}
+
+.f_circleG{
+position:absolute;
+background-color:#FFFFFF;
+height:23px;
+width:23px;
+-moz-border-radius:12px;
+-moz-animation-name:f_fadeG;
+-moz-animation-duration:1.04s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:linear;
+-webkit-border-radius:12px;
+-webkit-animation-name:f_fadeG;
+-webkit-animation-duration:1.04s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;
+-ms-border-radius:12px;
+-ms-animation-name:f_fadeG;
+-ms-animation-duration:1.04s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:linear;
+-o-border-radius:12px;
+-o-animation-name:f_fadeG;
+-o-animation-duration:1.04s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:linear;
+border-radius:12px;
+animation-name:f_fadeG;
+animation-duration:1.04s;
+animation-iteration-count:infinite;
+animation-direction:linear;
+}
+
+#frotateG_01{
+left:0;
+top:52px;
+-moz-animation-delay:0.39s;
+-webkit-animation-delay:0.39s;
+-ms-animation-delay:0.39s;
+-o-animation-delay:0.39s;
+animation-delay:0.39s;
+}
+
+#frotateG_02{
+left:15px;
+top:15px;
+-moz-animation-delay:0.52s;
+-webkit-animation-delay:0.52s;
+-ms-animation-delay:0.52s;
+-o-animation-delay:0.52s;
+animation-delay:0.52s;
+}
+
+#frotateG_03{
+left:52px;
+top:0;
+-moz-animation-delay:0.65s;
+-webkit-animation-delay:0.65s;
+-ms-animation-delay:0.65s;
+-o-animation-delay:0.65s;
+animation-delay:0.65s;
+}
+
+#frotateG_04{
+right:15px;
+top:15px;
+-moz-animation-delay:0.78s;
+-webkit-animation-delay:0.78s;
+-ms-animation-delay:0.78s;
+-o-animation-delay:0.78s;
+animation-delay:0.78s;
+}
+
+#frotateG_05{
+right:0;
+top:52px;
+-moz-animation-delay:0.91s;
+-webkit-animation-delay:0.91s;
+-ms-animation-delay:0.91s;
+-o-animation-delay:0.91s;
+animation-delay:0.91s;
+}
+
+#frotateG_06{
+right:15px;
+bottom:15px;
+-moz-animation-delay:1.04s;
+-webkit-animation-delay:1.04s;
+-ms-animation-delay:1.04s;
+-o-animation-delay:1.04s;
+animation-delay:1.04s;
+}
+
+#frotateG_07{
+left:52px;
+bottom:0;
+-moz-animation-delay:1.17s;
+-webkit-animation-delay:1.17s;
+-ms-animation-delay:1.17s;
+-o-animation-delay:1.17s;
+animation-delay:1.17s;
+}
+
+#frotateG_08{
+left:15px;
+bottom:15px;
+-moz-animation-delay:1.3s;
+-webkit-animation-delay:1.3s;
+-ms-animation-delay:1.3s;
+-o-animation-delay:1.3s;
+animation-delay:1.3s;
+}
+
+@-moz-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@-webkit-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@-ms-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@-o-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+.slides_wrapper{
+  overflow: hidden;
+}
+
+.slides_posi { 
   position: relative;  
   width: 1000px;
   margin: 0 auto;   
@@ -283,19 +496,18 @@ p{
 }
 
 .pre_btn{
-  top: 50%;
-  left: 131px;
+  top: 50%; 
+  left: -36px;
 }
 
 .next_btn{
   top: 50%;  
-  right: 131px;
+  right: -36px;
 }
 
 
 
-.pre_btn img, .next_btn img{
-  opacity: 0.7;  
+.pre_btn img, .next_btn img{ 
   cursor: pointer;
   -webkit-transition: opacity 0.1s ;
     -moz-transition: opacity 0.1s ;
@@ -305,7 +517,7 @@ p{
 }
 
 .pre_btn img:hover, .next_btn img:hover{
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .Slides_text{
@@ -362,17 +574,6 @@ p{
   padding: 15px 0px 15px 0px;  
 }
 
-.menu ul {
-  margin: 0px;
-  padding-top: 15px;  
-  float: left;
-}
-
-.menu li{
-  margin: 0px 20px 0px 0px;
-  padding: 0px;
-  display: inline;
-}
 
 .banner_right a{
   -webkit-transition: color 0.3s;
@@ -403,7 +604,7 @@ p{
 }
 
 .pure-button{
-  background: rgba(147,173,43,1) !important;
+  background: rgba(154,185,32,1);;
   color: white !important;
 }
 
