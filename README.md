@@ -16,10 +16,11 @@
 
  + ###後端
   > - PHP(略懂)
-  > - Perl(略懂)
+  > - MySQL(略懂)
 
  + ###其他
   > - Python
+  > - Perl
   > - Git 
   > - JAVA
   > - C
