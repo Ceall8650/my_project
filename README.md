@@ -7,17 +7,17 @@
 
 ##熟悉技能
 
-+ ###前端
+> + ###前端
   - HTML
   - CSS
   - PSD切版
   - JQuery
 
-+ ###後端
+> + ###後端
   - PHP
   - Perl
 
-+ ###其他
+> + ###其他
   - Python
   - JAVA
   - C
