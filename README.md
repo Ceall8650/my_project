@@ -6,22 +6,21 @@
 ##熟悉技能
 
 + ###前端
-  
   - HTML
   - CSS
   - PSD切版
   - JQuery
 
 + ###後端
-- PHP
-- Perl
+  - PHP
+  - Perl
 
 + ###其他
-- Python
-- JAVA
-- C
-- Flash
-- Actionscript
+  - Python
+  - JAVA
+  - C
+  - Flash
+  - Actionscript
 
 ##未來方向
 
