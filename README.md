@@ -4,11 +4,13 @@
 
 
 ##熟悉技能
+
 + ###前端
-- HTML
-- CSS
-- PSD切版
-- JQuery
+  
+  - HTML
+  - CSS
+  - PSD切版
+  - JQuery
 
 + ###後端
 - PHP
