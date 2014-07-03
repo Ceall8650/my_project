@@ -55,5 +55,5 @@
 [文件下載(PDF)](http://tinyurl.com/nau3t9a)
 > - 趨勢科技 2012 騰雲駕霧程式創意大賽 - Late Out 準時王  
 [文件下載(PDF)](http://tinyurl.com/l2evzuu) 
-> - PSD切版專案
-[文件下載](http://tinyurl.com/nwt3e58)
+> - PSD切版專案  
+[文件下載(RAR)](http://tinyurl.com/nwt3e58)
