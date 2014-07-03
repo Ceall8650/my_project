@@ -38,7 +38,11 @@
  >>感謝評審們青睞，讓我們能在專題競賽中得到佳作。
 
 ##研究所論文
-
+> **論文名稱**:社會網絡最短路徑度數隱私保護之探討  
+> **英文名稱**:Degree Anonymization of Shortest Path Privacy on Social Networks  
+> [檔案連結](http://tinyurl.com/ku2sfvk)
+ 
+ 
 ##比賽經歷
 > - EC-IC 2009 Yahoo!奇摩全國大專院校電子商務創意競賽 - Paint人布書
 > - 趨勢科技 2012 騰雲駕霧程式創意大賽 - Late Out 準時王 (佳作)
