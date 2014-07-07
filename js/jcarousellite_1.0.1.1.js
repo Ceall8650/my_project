@@ -288,11 +288,9 @@ $.fn.jCarouselLite = function(o) {
 
                 if(o.circular) {            // If circular we are in first or last, then goto the other end
                     if(to<=o.start-v) {           // If first, then goto last
-                        //if second (by ceall)
                         ul.css(animCss, -((itemLength-(v*2))*liSize)+"px");
                         // If "scroll" > 1, then the "to" might not be equal to the condition; it can be lesser depending on the number of elements.
                         curr = to==o.start-v ? itemLength-(v*2) : itemLength-(v*2)-o.scroll;
-                               //if(to == second) then "to" goto original   
                     } else if(to>=itemLength-v+1) { // If last, then goto first
                         ul.css(animCss, -( (v) * liSize ) + "px" );
                         // If "scroll" > 1, then the "to" might not be equal to the condition; it can be greater depending on the number of elements.

@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Camy-Store E_commerce</title>
+  <link rel="short icon" type="img/png" href="img/short-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name='description' content='' />
+  <meta name='keywords' content='camy,camera,wifi,fst,網站建置' />
+  <meta property="og:title" content="邁世通科技 - 網通應用‧電子商務‧數位媒體"/>
+  <meta property="og:description" content="秉持著「科技、關懷、創新」的精神，不斷的研發，拓展公司業務方向，創造客戶最大企業價值。">
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://www.myerstone.com.tw"/>
+  <meta property="og:image" content="http://www.myerstone.com.tw/images/icon.png"/>
+  <title>邁世通科技 - 網通應用‧電子商務‧數位媒體</title>
   <link rel="stylesheet" type="text/css" href="css_stylesheet/camy_store.css">
   <link rel="stylesheet" type="text/css" href="css_stylesheet/pure-release-0.5.0/buttons.css">
-  <link rel="stylesheet" href="css_stylesheet/font-awesome-4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css_stylesheet/font-awesome-4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css_stylesheet/lightbox.css">
   <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/jcarousellite_1.0.1.1.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
   <script type="text/javascript" src="js/camy_store.js"></script>
 </head>
 <body>
@@ -45,11 +58,11 @@
       </div>
       <div class="SN_link clearfix">
         <div class="social_link">
-          <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_03.jpg?raw=true" alt="RSS" /></a>
-          <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_05.jpg?raw=true" alt="pinterest" /></a>
-          <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_07.jpg?raw=true" alt="facebook" /></a>
-          <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_09.jpg?raw=true" alt="twitter" /></a>       
-          <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_11.jpg?raw=true" alt="dribble" /></a>
+          <a href="#"><img src="images/header_banner/header_banner_03.jpg?raw=true" alt="RSS" /></a>
+          <a href="#"><img src="images/header_banner/header_banner_05.jpg?raw=true" alt="pinterest" /></a>
+          <a href="#"><img src="images/header_banner/header_banner_07.jpg?raw=true" alt="facebook" /></a>
+          <a href="#"><img src="images/header_banner/header_banner_09.jpg?raw=true" alt="twitter" /></a>       
+          <a href="#"><img src="images/header_banner/header_banner_11.jpg?raw=true" alt="dribble" /></a>
         </div>
         <div class="search_bar">
           <form>
@@ -61,7 +74,7 @@
     </div>
     <div class="menu_nav clearfix">
        <ul class="menu_nav_list">
-         <li class="menu_home">
+         <li class="menu_home menu_layer1">
           <a href="#"><span class="green_word">HOME</span></a>
           <div class="home_submenu submenu">
             <ul >
@@ -74,13 +87,111 @@
             </ul>
           </div>
          </li>
-         <li class="menu_shop"><a class="shop hover_link" href="#">SHOP</a></li>
-         <li class="menu_shopby"><a class="SHOPBY hover_link" href="#">SHOP BY</a></li>
-         <li class="menu_cart"><a class="CART hover_link" href="#">CART</a></li>
-         <li class="menu_news"><a class="NEWS hover_link" href="#">NEWS</a></li>
-         <li class="menu_page"><a class="PAGE hover_link" href="#">PAGE</a></li>
-         <li class="menu_portfolio"><a class="PORTFOLIO hover_link" href="#">PORTFOLIO</a></li>
-         <li class="menu_contact"><a class="CONTACT hover_link" href="#">CONTACT</a></li>
+         <li class="menu_shop menu_layer1">
+          <a class="shop hover_link" href="#">SHOP</a>
+          <div class="shop_submenu submenu">
+            <ul >
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/">Shop full width</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Shop with sidebar</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Digital Cameras</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Video Camerasr</a>
+              </li>                            
+            </ul>
+          </div>          
+         </li>
+         <li class="menu_shopby menu_layer1">
+          <a class="SHOPBY hover_link" href="#">SHOP BY</a>
+          <div class="shopby_submenu submenu">
+            <ul >
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/">Price Range</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Categories</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Text menu</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Featured Camera</a>
+              </li>
+            </ul>
+          </div>          
+         </li>
+         <li class="menu_cart menu_layer1">
+          <a class="CART hover_link" href="#">CART</a>
+          <div class="cart_submenu submenu">
+            <ul >
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/">View Cart</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Checkout</a>
+              </li>
+               <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Checkout -> Pay</a>
+              </li>
+               <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Order Received</a>
+              </li>
+            </ul>
+          </div>          
+         </li>
+         <li class="menu_news menu_layer1">
+          <a class="NEWS hover_link" href="#">NEWS</a>
+          <div class="new_submenu submenu">
+            <ul >
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/">Blog with Sidebar</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Blog as Portfolio</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Full width Blog</a>
+              </li>
+            </ul>
+          </div>          
+         </li>
+         <li class="menu_page menu_layer1">
+          <a class="PAGE hover_link" href="#">PAGE</a>
+          <div class="page_submenu submenu">
+            <ul >
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/">Our Team</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Page with Sidebar</a>
+              </li>
+            </ul>
+          </div>          
+         </li>
+         <li class="menu_portfolio menu_layer1">
+          <a class="PORTFOLIO hover_link" href="#">PORTFOLIO</a>
+          <div class="portfolio_submenu submenu">
+            <ul >
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/">Portfolio 2 Columns</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Portfolio 3 Columns</a>
+              </li>
+              <li>
+                <a class="hover_link" href="http://camy.premiumcoding.com/home-with-full-slider/">Portfolio 4 Columns</a>
+              </li>
+            </ul>
+          </div>          
+         </li>
+         <li class="menu_contact menu_layer1">
+          <a class="CONTACT hover_link" href="#">CONTACT</a>
+         </li>
          </ul>
          <div class="cart">
          <a class="pure-button" href="#">
@@ -89,7 +200,7 @@
        </div>             
      </div>    
   </div>
-<!--   <div id="loading_animate">
+<!--   <div class="loading_animate">
     <div class="f_circleG" id="frotateG_01">    </div>
     <div class="f_circleG" id="frotateG_02">    </div>
     <div class="f_circleG" id="frotateG_03">    </div>
@@ -107,7 +218,7 @@
         <!--顯示所有slides數量的區塊-->
         <ul>
         <li class="item01">
-         <img src="http://camy.premiumcoding.com/wp-content/uploads/2013/02/slideshowImage11.jpg" alt="photorgraphy set slide" >
+         <img src="images/content_slidephoto/slideshowImage1.jpg" alt="photorgraphy set slide" >
          <div class="Slides_text">
            <div class="text_title">
              <h2>PHOTOGRAPHY SET</h2>
@@ -129,7 +240,7 @@
          </div>             
         </li>
         <li class="item02">
-         <img src="https://github.com/Ceall8650/my_project/raw/cfd62d1fd9e4947c1f1141024d48a10dda496e5a/images/content_slidephoto/slideshowImage2.jpg?raw=true" alt="photorgraphy set slide">
+         <img src="images/content_slidephoto/slideshowImage2.jpg" alt="photorgraphy set slide">
          <div class="Slides_text">
            <div class="text_title">
              <h2>PHOTOGRAPHY SET</h2>
@@ -151,7 +262,7 @@
          </div>             
         </li>
         <li class="item03">
-         <img src="https://github.com/Ceall8650/my_project/raw/cfd62d1fd9e4947c1f1141024d48a10dda496e5a/images/content_slidephoto/slideshowImage3.jpg?raw=true" alt="photorgraphy set slide">
+         <img src="images/content_slidephoto/slideshowImage3.jpg" alt="photorgraphy set slide">
          <div class="Slides_text">
            <div class="text_title">
              <h2>PHOTOGRAPHY SET</h2>
@@ -173,7 +284,7 @@
          </div>         
         </li>
         <li class="item04">
-         <img src="https://github.com/Ceall8650/my_project/raw/cfd62d1fd9e4947c1f1141024d48a10dda496e5a/images/content_slidephoto/slideshowImage4.jpg?raw=true" alt="photorgraphy set slide">
+         <img src="images/content_slidephoto/slideshowImage4.jpg" alt="photorgraphy set slide">
          <div class="Slides_text">
            <div class="text_title">
              <h2>PHOTOGRAPHY SET</h2>
@@ -197,10 +308,10 @@
         </ul>      
       </div>       
       <div class="pre_btn">
-      <img src="https://raw.githubusercontent.com/Ceall8650/my_project/master/images/content_slidephoto/header_slides_03.png" alt="pre_btn">
+      <img src="images/content_slidephoto/header_slides_03.png" alt="pre_btn">
       </div>
       <div class="next_btn">
-      <img src="https://raw.githubusercontent.com/Ceall8650/my_project/master/images/content_slidephoto/header_slides_06.png" alt="next_btn">  
+      <img src="images/content_slidephoto/header_slides_06.png" alt="next_btn">  
      </div>     
      </div>
     </div>
@@ -223,14 +334,14 @@
           <h2>RECENT PRODUCTS</h2>
         </div>
         <div class="change_pros">
-          <a class="prev_pros" href="#"><img src="https://github.com/Ceall8650/my_project/raw/96d3ff5fff29419daec8d0314461ed5c2d28ae72/images/content_recent_pros/content_recent_pro_38.jpg?raw=true" alt="prev_pros" /></a>
-          <a class="next_pros" href="#"><img src="https://github.com/Ceall8650/my_project/raw/96d3ff5fff29419daec8d0314461ed5c2d28ae72/images/content_recent_pros/content_recent_pro_41.jpg?raw=true" alt="next_pros" /></a>
+          <a class="prev_pros" href="#"><img src="images/prev_pros.jpg" alt="prev_pros" /></a>
+          <a class="next_pros" href="#"><img src="images/next_pros.jpg" alt="next_pros" /></a>
         </div>  
       </div>
         <ul class="pro_view clearfix">
           <li>
             <div class="pro_img">
-             <a href="https://github.com/Ceall8650/my_project/raw/96d3ff5fff29419daec8d0314461ed5c2d28ae72/images/content_recent_pros/content_recent_pro_03.jpg?raw=true" alt="recent product" data-lightbox="content_recent_pro_03.jpg"><img src="https://github.com/Ceall8650/my_project/raw/96d3ff5fff29419daec8d0314461ed5c2d28ae72/images/content_recent_pros/content_recent_pro_03.jpg?raw=true" alt="recent product1" ></a>
+             <a href="images/recent_pros/content_recent_pro_03.jpg" data-lightbox="recent_product"><img src="images/recent_pros/content_recent_pro_03.jpg" alt="recent product1" ></a>
             </div>
             <div class="pro_descriptions">
               <a href="#"><h3>DSLR Camera 100DX-1</h3></a>
@@ -242,7 +353,7 @@
           </li>
           <li>
             <div class="pro_img">
-              <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/96d3ff5fff29419daec8d0314461ed5c2d28ae72/images/content_recent_pros/content_recent_pro_10.jpg?raw=true" alt="recent product2"></a>
+              <a href="images/recent_pros/content_recent_pro_06.jpg" data-lightbox="recent_product"><img src="images/recent_pros/content_recent_pro_06.jpg" alt="recent product2" ></a>
             </div>
             <div class="pro_descriptions">
               <a href="#"><h3>DSLR Camera 100DX-1</h3></a>
@@ -254,7 +365,7 @@
           </li>
           <li>
             <div class="pro_img">
-              <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/96d3ff5fff29419daec8d0314461ed5c2d28ae72/images/content_recent_pros/content_recent_pro_06.jpg?raw=true" alt="recent product3"></a>
+              <a href="images/recent_pros/content_recent_pro_10.jpg" data-lightbox="recent_product"><img src="images/recent_pros/content_recent_pro_10.jpg" alt="recent product3" ></a>
             </div>
             <div class="pro_descriptions">
               <a href="#"><h3>DSLR Camera 100DX-1</h3></a>
@@ -266,7 +377,7 @@
           </li>
           <li class="r_pro4">
             <div class="pro_img">
-              <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/96d3ff5fff29419daec8d0314461ed5c2d28ae72/images/content_recent_pros/content_recent_pro_03.jpg?raw=true" alt="recent product4"></a>
+              <a href="images/recent_pros/content_recent_pro_12.jpg" data-lightbox="recent_product"><img src="images/recent_pros/content_recent_pro_12.jpg" alt="recent product4" ></a>
             </div>
             <div class="pro_descriptions">
               <a href="#"><h3>DSLR Camera 100DX-1</h3></a>
@@ -282,14 +393,14 @@
           <h2>FEATURED PRODUCTS</h2>
         </div>
         <div class="change_pros">
-          <a class="prev_pros" href="#"><img src="https://github.com/Ceall8650/my_project/raw/96d3ff5fff29419daec8d0314461ed5c2d28ae72/images/content_recent_pros/content_recent_pro_38.jpg?raw=true" alt="prev_pros" /></a>
-          <a class="next_pros" href="#"><img src="https://github.com/Ceall8650/my_project/raw/96d3ff5fff29419daec8d0314461ed5c2d28ae72/images/content_recent_pros/content_recent_pro_41.jpg?raw=true" alt="next_pros" /></a>
+          <a class="prev_pros" href="#"><img src="images/prev_pros.jpg" alt="prev_pros" /></a>
+          <a class="next_pros" href="#"><img src="images/next_pros.jpg" alt="next_pros" /></a>
         </div>  
       </div>
       <ul class="pro_view clearfix">
         <li>
           <div class="pro_img">
-            <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/2c1e96720acb311b12e54184d9fc0b1c50dda9de/images/content_feature_pros/content_feature_pro_03.jpg?raw=true" alt="feature product 1"></a>
+            <a href="images/feature_pros/content_feature_pro_03.jpg" data-lightbox="feature_pros"><img src="images/feature_pros/content_feature_pro_03.jpg" alt="feature_pro1" ></a>
           </div>
           <div class="pro_descriptions">
             <a href="#"><h3>EOS 450D Camera</h3></a>
@@ -301,7 +412,7 @@
         </li>
         <li>
           <div class="pro_img">
-            <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/2c1e96720acb311b12e54184d9fc0b1c50dda9de/images/content_feature_pros/content_feature_pro_05.jpg?raw=true" alt="feature product 2"></a>
+            <a href="images/feature_pros/content_feature_pro_05.jpg" data-lightbox="feature_pros"><img src="images/feature_pros/content_feature_pro_05.jpg" alt="feature_pro2" ></a>
           </div>
           <div class="pro_descriptions">
             <a href="#"><h3>EOS 450D Camera</h3></a>
@@ -313,7 +424,7 @@
         </li>
         <li>
           <div class="pro_img">
-            <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/2c1e96720acb311b12e54184d9fc0b1c50dda9de/images/content_feature_pros/content_feature_pro_07.jpg?raw=true" alt="feature product 3"></a>
+            <a href="images/feature_pros/content_feature_pro_07.jpg" data-lightbox="feature_pros"><img src="images/feature_pros/content_feature_pro_07.jpg" alt="feature_pro3" ></a>
           </div>
           <div class="pro_descriptions">
             <a href="#"><h3>EOS 450D Camera</h3></a>
@@ -325,8 +436,8 @@
         </li>
         <li class="f_pro4">
           <div class="pro_img">
-            <a href="#"><img src="https://github.com/Ceall8650/my_project/blob/master/images/content_feature_pros/content_feature_pro_09.jpg?raw=true" alt="feature product 4"></a>
-          </div>
+            <a href="images/feature_pros/content_feature_pro_09.jpg" data-lightbox="feature_pros"><img src="images/feature_pros/content_feature_pro_09.jpg" alt="feature_pro4" ></a>      
+          </div>  
           <div class="pro_descriptions">
             <a href="#"><h3>EOS 450D Camera</h3></a>
             <p><strong>Duis autem</strong> vel eum iriure dolor in hendrerit in vulputate <strong>velit esse</strong> molestie consequat, vel illum dolore eu feugiat null ...</p>
@@ -337,8 +448,8 @@
         </li>
         <li>
           <div class="pro_img">          
-            <a href="#"><img src="http://camy.premiumcoding.com/wp-content/uploads/2012/09/product-7-video-camera1-280x180.jpg" alt="feature product 5"></a>
-          </div>
+            <a href="images/feature_pros/content_feature_pro_11.jpg" data-lightbox="feature_pros"><img src="images/feature_pros/content_feature_pro_11.jpg" alt="feature_pro5" ></a>      
+          </div>  
           <div class="pro_descriptions">
             <a href="#"><h3>EOS 450D Camera</h3></a>
             <p><strong>Duis autem</strong> vel eum iriure dolor in hendrerit in vulputate <strong>velit esse</strong> molestie consequat, vel illum dolore eu feugiat null ...</p>
@@ -348,29 +459,43 @@
           </div>          
         </li> 
     </ul>
-      <div class="brand">
+      <div class="sponsor">
         <div class="title_bar  clearfix">
           <div class="title_name">
             <h2>CHECK OUR BRANDS<h2/>
           </div>
         </div>
-        <div class="brand_list clearfix">
-          <div class="brand_link">
-            <a href="http://premiumcoding.com/freebie-camy-ecommerce-template-psd/#" target="blank"><img src="https://github.com/Ceall8650/my_project/raw/d3a7657e07cc7e4d696bd2daf667e7a591190524/images/content_sponsors/content_sponsors_03.png?raw=true" alt="sponsor1 TechCom"></a>
+        <div class="sponsor_wrapper">
+          <div class="sponsor_posi">
+            <div class="sponsor_list clearfix">
+              <ul>
+                <li class="sponsor1 sponsor_link">
+                  <a href="http://premiumcoding.com/freebie-camy-ecommerce-template-psd/#" target="blank">
+                  <img src="images/content_sponsors/advertise1.png" alt="sponsor1 TechCom"></a>
+                </li>
+                 <li class="sponsor2 sponsor_link">
+                  <a href="http://premiumcoding.com/" target="blank"><img src="images/content_sponsors/advertise2.png" alt="sponsor2 "></a>
+                </li>
+                <li class="sponsor3 sponsor_link">
+                  <a href="http://premiumcoding.com/" target="blank"><img src="images/content_sponsors/advertise3.png" alt="sponsor3 "></a>
+                </li>
+                <li class="sponsor4 sponsor_link">
+                  <a href="http://premiumcoding.com/" target="blank"><img src="images/content_sponsors/advertise4.png" alt="sponsor4 "></a>
+                </li>
+                <li class="sponsor5 sponsor_link">
+                  <a href="http://premiumcoding.com/" target="blank"><img src="images/content_sponsors/advertise5.png" alt="sponsor5"></a>
+                </li>
+                <li class="sponsor6 sponsor_link">
+                  <a href="http://premiumcoding.com/" target="blank"><img src="images/content_sponsors/advertise6.png" alt="sponsor6"></a>
+                </li>            
+              </ul>
+            </div> 
+            <div class="sponsor_direction_btn">
+              <a class="pre_sponsor"></a>
+              <a class="next_sponsor"></a>
+            </div>             
           </div>
-           <div class="brand_link">
-             <a href="http://premiumcoding.com/" target="blank"><img src="https://github.com/Ceall8650/my_project/raw/d3a7657e07cc7e4d696bd2daf667e7a591190524/images/content_sponsors/content_sponsors_05.png?raw=true" alt="sponsor2 "></a>
-          </div>
-          <div class="brand_link">
-             <a href="http://premiumcoding.com/" target="blank"><img src="https://github.com/Ceall8650/my_project/raw/d3a7657e07cc7e4d696bd2daf667e7a591190524/images/content_sponsors/content_sponsors_06.png?raw=true" alt="sponsor3 "></a>
-          </div>
-          <div class="brand_link">
-             <a href="http://premiumcoding.com/" target="blank"><img src="https://github.com/Ceall8650/my_project/blob/d3a7657e07cc7e4d696bd2daf667e7a591190524/images/content_sponsors/content_sponsors_07.png?raw=true" alt="sponsor4 "></a>
-          </div>
-          <div class="brand_link">
-             <a href="http://premiumcoding.com/" target="blank"><img src="https://github.com/Ceall8650/my_project/raw/d3a7657e07cc7e4d696bd2daf667e7a591190524/images/content_sponsors/content_sponsors_08.png?raw=true" alt="sponsor5"></a>
-          </div>
-        </div>  
+        </div>
       </div>
     </div>
   </div>
@@ -383,11 +508,11 @@
         <div class="footer_sn">
            <p><h2>Follow us</h2></p>
            <div class="sn_logo">
-              <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_03.jpg?raw=true" alt="RSS" /></a>
-              <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_05.jpg?raw=true" alt="pinterest" /></a>
-              <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_07.jpg?raw=true" alt="facebook" /></a>
-              <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_09.jpg?raw=true" alt="twitter" /></a>
-              <a href="#"><img src="https://github.com/Ceall8650/my_project/raw/aeee57878424416da63b731a9234056d728172c8/images/header_banner/header_banner_11.jpg?raw=true" alt="dribble" /></a>
+              <a href="#"><img src="images/header_banner/header_banner_03.jpg" alt="RSS" /></a>
+              <a href="#"><img src="images/header_banner/header_banner_05.jpg" alt="pinterest" /></a>
+              <a href="#"><img src="images/header_banner/header_banner_07.jpg" alt="facebook" /></a>
+              <a href="#"><img src="images/header_banner/header_banner_09.jpg" alt="twitter" /></a>
+              <a href="#"><img src="images/header_banner/header_banner_11.jpg" alt="dribble" /></a>
             </div>
           </div>  
        </div>
@@ -397,13 +522,13 @@
           </div>
           <div class="posts_wrap">
             <div class="posts">
-              <img src="https://github.com/Ceall8650/my_project/raw/d3a7657e07cc7e4d696bd2daf667e7a591190524/images/footer_info/footer_info_10.png?raw=true" alt="A brand new Set of Photography Equipment"/>
+              <img src="images/footer_info/footer_info_10.png" alt="A brand new Set of Photography Equipment"/>
               <div class="post_info">
                 <h3><a href="#">New Camera Set</a></h3>posted by <span class="green_word">Admin</span>
               </div>
             </div>
             <div class="posts">
-                  <img src="https://github.com/Ceall8650/my_project/raw/d3a7657e07cc7e4d696bd2daf667e7a591190524/images/footer_info/footer_info_15.png?raw=true" />
+                  <img src="images/footer_info/footer_info_15.png" />
               <div class="post_info">
                 <h3><a href="#">Special Camera Lens</a></h3>posted by <span class="green_word">Gljivec</span>
               </div>
@@ -437,7 +562,7 @@
        <div class="user1">
          <div class="user_info">
            <div class="user_icon">
-             <img src="https://github.com/Ceall8650/my_project/raw/d3a7657e07cc7e4d696bd2daf667e7a591190524/images/footer_info/footer_info_07.png?raw=true" alt="user1_icon" />  
+             <img src="images/footer_info/footer_info_07.png" alt="user1_icon" />  
            </div>
            <div class="user_name">
              <h3>ANNA</h3>
@@ -452,7 +577,7 @@
      <div class="user2">
        <div class="user_info">
          <div class="user_icon">
-           <img src="https://github.com/Ceall8650/my_project/raw/d3a7657e07cc7e4d696bd2daf667e7a591190524/images/footer_info/footer_info_17.png?raw=true" alt="user2_icon" />
+           <img src="images/footer_info/footer_info_17.png" alt="user2_icon" />
          </div>
          <div class="user_name">
            <h3>ERICA</h3>
