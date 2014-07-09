@@ -11,12 +11,12 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video {
-  margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  margin: 0;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -32,7 +32,8 @@ body{
 
 h3{
   font-size: 16px;
-  margin: 10px 0px;  
+  margin: 10px 0px;
+  font-weight: bold;  
 }
 
 h4{
@@ -154,12 +155,17 @@ p{
   margin: 0 auto;
 }
 
+.logo{
+  width: 315px;
+  height: 60px;
+  float:left;   
+}
+
 .logo h1{ 
   text-indent: -99999px;
 }
 
 .logo a{
-  float:left;   
   display: block;
   width: 315px;
   height: 55px;
@@ -192,15 +198,17 @@ p{
 }
 
 .search_submit{
-  width: 40px;
-  background-image: url(../images/header_banner/header_banner_19.jpg);
-  background-repeat: no-repeat;  
+  width: 40px;  
   border: none;
+  background-image: url(../images/header_banner/header_banner_19.jpg);
+  background-repeat: no-repeat;
 }
 
-.search_submit:hover{
+/*.search_submit:hover{
   cursor: pointer;
-}
+  background-image: url(../images/header_banner/header_banner_19.jpg) -40 ;
+  background-repeat: no-repeat; 
+}*/
  
 .menu_nav{ 
   margin-top: 30px; 
@@ -209,6 +217,8 @@ p{
 }
 
 .menu_nav_list {
+  width: 650px;
+  height: auto;
   margin: 0px;
   padding-top: 15px;  
   float: left;
@@ -216,9 +226,8 @@ p{
 
 
 .menu_nav_list>li{
-  margin: 0px 20px 0px 0px;
-  padding-bottom: 5px;
   display: inline;
+  margin: 0px 20px 2px 0px;
   position: relative;
 }
 
@@ -589,29 +598,46 @@ background-color:#FFFFFF}
   text-decoration: underline;
 }
 
-.store_visiting{
+/*.store_visiting{
   background-color: white;
-  margin-bottom: 10px; 
-}
+  margin-bottom: 10px;
+}*/
 
-.checkout_info{
+/*.checkout_info{
   font-family: PT Sans Narrow;
-  margin: 15px;
   float: left;
+  margin: 15px;
 } 
-
-.store_visiting h2{
+*/
+.store_visiting{
+  height: 60px;
+  width: 1000px;
+  background-color: white;
   font-size: 170%;
+  font-family: PT Sans Narrow;  
+  padding: 10px 10px;
+  vertical-align: middle;
+  line-height: 40px;
+  margin-top: 0px;
+  display: table-cell;
 }
 
 .store_link{
-  height: 30px;
-  witdh: 145px;
-  margin-top: 30px; 
-  border-top: 1px dotted rgba(140,140,140,0.6);  
-  padding: 15px 0px 15px 0px;  
+  float: right;  
+  padding: 0px 7px ;
+  background-color: rgba(154,185,32,1);
+  border-radius: 5px;
+}
+  
+.store_link a {
+  color: white;
+  font-size: large;  
+  font-weight: bold;
 }
 
+.store_link a:hover{
+  text-decoration: underline;
+}
 
 .banner_right a{
   -webkit-transition: color 0.3s;
@@ -662,52 +688,10 @@ background-color:#FFFFFF}
   font-size: 20px;
 }
 
-.store_visiting{
-  background-color: white;
-  margin-bottom: 10px; 
-}
-
-.checkout_info{
-  font-family: PT Sans Narrow;
-  margin: 15px;
-  float: left;
-} 
-
-.store_visiting h2{
-  font-size: 170%;
-}
-
-.store_link{
-  height: 30px;
-  witdh: 145px;
-  float: right; 
-  margin: 10px; 
-  padding: 7px 7px 0px 7px;
-  border-radius: 5px;
-  background-color: rgba(154,185,32,1);
-}
-
-.store_link a {
-  color: white;
-  font-size: large;  
-  font-weight: bold;
-}
-
-.store_link a:hover{
-  text-decoration: underline;
-}
-
-.title_bar{
-  margin: 40px 0px 15px 0px;  
-}
-
 .title_name {
+  margin: 40px 0px;  
   font-weight: bold;
-  float: left;
   clear: both;
-}
-
-.title_name h2{
   font-size: x-large;
 }
 
@@ -903,7 +887,7 @@ background-color:#FFFFFF}
 
 .comments{
   width: 280px;
-  float: right;
+  float: left;
 }
 
 .footer_sn{
@@ -1007,3 +991,135 @@ background-color:#FFFFFF}
 .copyright{
   float: right;
 }
+
+@media screen and (max-width: 1024px){
+  .banner_top, .header_wrapper, .slides_wrapper, .wrapper{
+    width: 100%;
+  }
+
+  .SN_link, .slides_wrapper, .store_link, .change_pros, .sponsor{
+    display: none;
+  }
+
+  .banner_top_content{
+    width: 96%;
+    margin: 0px 2%;
+  }
+  
+  .logo{
+    width: 100%;
+    position: static;
+    margin: 10px  0px;
+  }
+
+  .logo a{
+    margin: 0px auto;
+  }
+
+  .menu_nav{
+    width: 96%; 
+    margin: 30px 2%;
+  }
+
+  .menu_nav_list{
+    width: 70%;
+    height:auto;
+  }
+
+  .menu_nav_list>li{
+    display: block;
+    float: left;
+    margin: 10px 20px;
+    /*inline-blovk 無法設定width及height*/
+  }
+
+  .menu_layer1>a{
+    font-size: x-large;
+  }
+  
+  .submenu .hover_link{
+    font-size: 100%;
+  }
+
+  .cart{
+    margin-top: 25px;
+  }
+
+  .wrapper{
+    padding: 0px;
+  }
+
+  .store_visiting{
+    display: block;
+    font-size: 134%;
+    text-align: center;
+    width: 96%;
+    line-height: 60px;
+    padding: 0px;
+    margin: 0px 2%;
+  }
+
+  .checkout_info{
+    margin: 0px 20%;
+  }
+
+  .title_name{
+    text-align: center;
+  }
+
+  .pro_view li{
+    width: 45%;
+    margin: 20px 0px 20px 4%;
+  }
+
+  .pro_img img{
+    margin: 0px auto;
+  }
+
+  .pro_descriptions h3{
+    text-align: center;
+  } 
+  
+  .footer_container>div{
+    width: 30%;
+    margin-left: 15%;
+  } 
+
+  .footer{
+    height: auto;
+  }
+
+  .footer_container {
+    width: 100%;
+  }
+
+  .footer_container h2{
+    font-size: xx-large;
+  }
+
+  .footer_container h3{
+    font-size: large;
+  }
+
+  .footer_nav {
+    width: 96%;
+    padding: 0px 2%;
+  }
+
+  .posts{
+    width: 100%;
+  }
+
+  .contacts{
+    font-size: 130%;
+  }
+
+  .user_words{
+    width: 73%;
+  }
+
+  .comments{
+    margin: 0px;
+  }
+}
+

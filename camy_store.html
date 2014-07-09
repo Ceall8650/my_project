@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Camy-Store E_commerce</title>
-  <link rel="short icon" type="img/png" href="img/short-icon.png">
+  <link rel="short icon" type="img/png" href="images/short-icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name='description' content='' />
   <meta name='keywords' content='camy,camera,wifi,fst,網站建置' />
@@ -17,13 +17,16 @@
   <link rel="stylesheet" type="text/css" href="css_stylesheet/font-awesome-4.1.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css_stylesheet/lightbox.css">
   <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-  <script type="text/javascript" src="js/jcarousellite_1.0.1.1.js"></script>
+  <script type="text/javascript" src="js/jcarousellite_1.0.1.js"></script>
   <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.0.min.map"></script>
   <script type="text/javascript" src="js/camy_store.js"></script>
 </head>
 <body>
   <div class="banner_top">
+  <!-- banner的背景 -->
     <div class="banner_top_content">
+    <!-- 固定banner資訊的位置 -->
       <div class="banner_left">
         <ul>
          <li>
@@ -317,27 +320,29 @@
     </div>
   <div class="wrapper">
     <div class="content">
-      <div class="store_visiting clearfix">
-        <div class="checkout_info">
-          <h2>
+      <!-- <div class="store_visiting clearfix"> -->
+        <!-- <div class="checkout_info"> -->
+          <h2 class="store_visiting">
             CHECK OUR <strong>AMAZING OFFERS</strong>, VISIT OUR <strong>STORE</strong> NOW
+            <div class="store_link">
+              <span class="green_word">
+                <a href="#">VISIT THE STORE</a>
+              </span>  
+            </div>    
           </h2> 
-        </div> 
-        <div class="store_link">
-          <span class="green_word">
-            <a href="#">VISIT THE STORE</a>
-          </span>  
-        </div>    
-      </div>
-      <div class="title_bar clearfix">
-        <div class="title_name">
-          <h2>RECENT PRODUCTS</h2>
-        </div>
-        <div class="change_pros">
-          <a class="prev_pros" href="#"><img src="images/prev_pros.jpg" alt="prev_pros" /></a>
-          <a class="next_pros" href="#"><img src="images/next_pros.jpg" alt="next_pros" /></a>
-        </div>  
-      </div>
+        <!-- </div>  -->
+      <!-- </div> -->
+      <!-- <div class="title_bar clearfix"> -->
+        <!-- <div class="title_name"> -->
+          <h2 class="title_name">
+            RECENT PRODUCTS
+            <div class="change_pros">
+              <a class="prev_pros" href="#"><img src="images/prev_pros.jpg" alt="prev_pros" /></a>
+              <a class="next_pros" href="#"><img src="images/next_pros.jpg" alt="next_pros" /></a>
+            </div>  
+          </h2>
+        <!-- </div> -->
+      <!-- </div> -->
         <ul class="pro_view clearfix">
           <li>
             <div class="pro_img">
@@ -388,15 +393,17 @@
             </div>            
           </li>
         </ul>
-      <div class="title_bar clearfix">
-        <div class="title_name">
-          <h2>FEATURED PRODUCTS</h2>
-        </div>
-        <div class="change_pros">
-          <a class="prev_pros" href="#"><img src="images/prev_pros.jpg" alt="prev_pros" /></a>
-          <a class="next_pros" href="#"><img src="images/next_pros.jpg" alt="next_pros" /></a>
-        </div>  
-      </div>
+      <!-- <div class="title_bar clearfix"> -->
+        <!-- <div class="title_name"> -->
+          <h2 class="title_name">
+            FEATURED PRODUCTS
+            <div class="change_pros">
+              <a class="prev_pros" href="#"><img src="images/prev_pros.jpg" alt="prev_pros" /></a>
+              <a class="next_pros" href="#"><img src="images/next_pros.jpg" alt="next_pros" /></a>
+            </div>  
+          </h2>
+        <!-- </div> -->
+      <!-- </div> -->
       <ul class="pro_view clearfix">
         <li>
           <div class="pro_img">
@@ -446,7 +453,7 @@
             <a href="#">View the Prodocts</a>
           </div>          
         </li>
-        <li>
+        <li class="last_pro"> 
           <div class="pro_img">          
             <a href="images/feature_pros/content_feature_pro_11.jpg" data-lightbox="feature_pros"><img src="images/feature_pros/content_feature_pro_11.jpg" alt="feature_pro5" ></a>      
           </div>  
@@ -460,11 +467,11 @@
         </li> 
     </ul>
       <div class="sponsor">
-        <div class="title_bar  clearfix">
-          <div class="title_name">
-            <h2>CHECK OUR BRANDS<h2/>
-          </div>
-        </div>
+        <!-- <div class="title_bar  clearfix"> -->
+          <!-- <div class="title_name"> -->
+            <h2 class="title_name">CHECK OUR BRANDS<h2/>
+          <!-- </div> -->
+        <!-- </div> -->
         <div class="sponsor_wrapper">
           <div class="sponsor_posi">
             <div class="sponsor_list clearfix">
