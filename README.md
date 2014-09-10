@@ -8,19 +8,20 @@
 ##技能
 
  + ###前端
-  > - HTML(熟悉)
-  > - CSS(熟悉)
-  > - PSD切版(熟悉)
-  > - 使用JQuery Plugins & JQuery(略懂)
-  > - Javascript(略懂)
+  > - PSD切版 (★★★★★)
+  > - HTML (★★★★☆)
+  > - CSS (★★★★☆)
+  > - 使用JQuery Plugins & JQuery (★★★☆☆)
+  > - Javascript (★☆☆☆☆)
 
  + ###後端
-  > - PHP(略懂)
-  > - MySQL(略懂)
+  > - PHP (★★☆☆☆)
+  > - MySQL (★★☆☆☆)
 
  + ###其他
-  > - Python
-  > - Git 
+  > - Git (★★☆☆☆)
+  > - Github (★★☆☆☆)
+  > - Python (★★☆☆☆)
 
 ##未來方向
 > - 成為一名前端工程師  
